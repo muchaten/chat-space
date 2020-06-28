@@ -32,9 +32,9 @@ Things you may want to cover:
 |password|integer|index:true,null: false, unlque:true|
 
 ### Association
-- has_many :groups_users
-- has_many :groups
 - has_many :groups, through: :groups_users
+- has_many :groups_users
+- has_many :messages
 
 ## groupsテーブル
 
@@ -42,12 +42,10 @@ Things you may want to cover:
 |------|----|-------|
 |group_name|strig|null: false|
 |member|strig|index:true,null: false,unlque:true|
-|message_id|strig|null: false, foreign_key: true|
 
 ### Association
-- has_many :groups_users
-- has_many :users
 - has_many :users, through: :groups_users
+- has_many :groups_users
 
 ## groups_usersテーブル
 
@@ -57,8 +55,8 @@ Things you may want to cover:
 |group_id|integer|null: false, foreign_key: true|
 
 ### Association
-- belongs_to :group
-- belongs_to :user- belongs_to :users
+- belongs_to :groups
+- belongs_to :users
 
 ## messagesテーブル
 
@@ -69,5 +67,4 @@ Things you may want to cover:
 |user_id|integer|null: false, foreign_key: true|
 
 ### Association
-- has_many :groups_users
 - belongs_to :users
