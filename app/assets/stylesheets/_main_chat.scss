@@ -3,8 +3,8 @@
 }
 .Main_chat{
   background-color: #ffffff;
-  .Main_chat__header{
-    // width: calc(100vw - 300px);
+  width: calc(100vw - 300px);
+  &__header{
     display: flex;
     height: 100px;
     justify-content: space-between;
@@ -36,7 +36,7 @@
     }
   }
   
-  .Main_chat__message{
+  &__message{
     height: calc(100vh - 190px);
     background-color: #fafafa;
     border-top: 0 solid #eeeeee;
@@ -63,7 +63,7 @@
         }
   }
   
-  .Main_chat__form{
+  &__form{
     height: 90px;
     background-color: #d2d2d2;
     padding: 20px 40px;
