@@ -63,3 +63,52 @@
         }
   }
   
+  .Main_chat__form{
+    height: 90px;
+    background-color: #d2d2d2;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    .Form__content{
+      width: calc(100vw - 380px);
+      padding: 0 10px;
+      position: relative;
+      display: flex;
+      align-items: center;
+      background-color: #fafafa; 
+      justify-content: space-between;
+      .Content__textbox{
+        display: flex;
+      }
+      
+      .Form__text{
+        color: #999999;
+        align-items: center;
+        padding-left: 10px;
+      }
+      
+      .Form__image{
+        position: absolute;
+        right: 10px;
+        align-items: center;
+        justify-content: flex-end;
+        input{display: none;}
+      }
+      
+      .i{
+        color: #999999;
+      }
+    }
+    .Form__sendbox{
+      background-color: #38aef0;
+      padding: 17px 30px;
+      margin-left: 15px;
+    }
+    
+    .Form__editbtn{ 
+      font-size: 16px;
+      color: #ffffff;
+    }
+  }
+}
+  
