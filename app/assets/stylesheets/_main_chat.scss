@@ -1,3 +1,38 @@
 .wrapper{
   display: flex;
 }
+.Main_chat{
+  background-color: #ffffff;
+  .Main_chat__header{
+    // width: calc(100vw - 300px);
+    display: flex;
+    height: 100px;
+    justify-content: space-between;
+    border-bottom: solid 1px #eeeeee;
+    align-items: center;
+    padding: 0 40px;
+    .Main_chat__box{
+      .Main_chat__groupname{
+        color: #333333;
+        font-size: 20px;
+        padding: 35px 0 15px;
+      }
+      
+    }
+        .Groupmember{
+          color: #999999;
+          font-size: 12px;
+        }
+    
+    .Main_chat__groupedit{
+      font-size: 16px;
+      padding: 12px 20px;
+      width: 72px;
+      border: solid 1px #38aef0;
+      .edit{
+        color: #38aef0;
+        text-decoration: none;
+      }
+    }
+  }
+  
