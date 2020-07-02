@@ -1,0 +1,12 @@
+.Side_bar
+  .Side_bar__header
+    .Side_bar__headerbox
+      %h1.Side_bar__username
+        masa
+      %ul.Side_bar__rightbox
+        %li.Side_bar__lefticon
+          = link_to "#/", class: "newgroup" do
+            = icon('fas','edit')
+        %li.Side_bar__righticon
+          = link_to "#/", class: "useredit" do
+            = icon('fas', 'cog')
