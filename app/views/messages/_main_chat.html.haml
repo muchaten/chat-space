@@ -30,3 +30,18 @@
         2019/1120(Wed) 17:43:01    
     .message__text
       おはよう！
+  .Main_chat__form
+    .Form__content
+      .Content__textbox
+        .Form__text
+          type a message
+        .Form__image
+          = link_to "image", class:"image" do
+            %label(for="image")
+              = icon('fas', 'image')
+              %input(type="file")
+    .Form__sendbox
+      .Form__editbtn
+        Send
+
+    
