@@ -42,3 +42,24 @@
 
 
 
+.Side_bar__grouplist {
+  height: calc(100vh - 100px);
+  background-color: #2f3e51;
+  padding: 0 20px;
+}
+
+.Side_bar__groups{
+  text-decoration: none;
+  padding: 20px 0 40px 0;
+  list-style: none;
+}
+.Side_bar__grouplistname {
+  font-size: 15px;
+  padding-bottom: 5px;
+  color: #ffffff;
+}
+.Side_bar__groupmessages {
+  text-decoration: none;
+  font-size: 11px;
+  color: #ffffff;
+}
