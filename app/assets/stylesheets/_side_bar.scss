@@ -1,0 +1,64 @@
+.Side_bar {
+  width: 300px;
+  color: #ffffff;
+  &__header{
+    height: 100px;
+    background-color: #253141;
+    display: flex;
+    padding: 0 20px;
+    align-items: center;
+    .Side_bar__headerbox {
+      height: 20px;
+      width: 260px;
+      justify-content: space-between;
+      display: flex;
+      .Side_bar__username {
+        font-size: 16px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-weight: bold;
+      }
+      
+      .Side_bar__rightbox {
+        width: 60px;
+        display: flex;
+        justify-content: flex-end;
+        .Side_bar__lefticon{
+        }
+        
+        .newgroup{
+          margin-right: 5px;
+          color: #ffffff; 
+        }
+        .useredit{
+          color: #ffffff;
+        }
+      } 
+    }
+  }
+  
+  
+  
+  &__grouplist {
+    height: calc(100vh - 100px);
+    background-color: #2f3e51;
+    padding: 0 20px;
+    .Side_bar__groups{
+      text-decoration: none;
+      padding: 20px 0 40px 0;
+      list-style: none;
+      .Side_bar__grouplistname {
+        font-size: 15px;
+        padding-bottom: 5px;
+        color: #ffffff;
+      }
+      .Side_bar__groupmessages {
+        text-decoration: none;
+        font-size: 11px;
+        color: #ffffff;
+      }
+    }
+  }
+}
+
