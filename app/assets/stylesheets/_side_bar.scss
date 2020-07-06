@@ -24,8 +24,6 @@
         width: 60px;
         display: flex;
         justify-content: flex-end;
-        .Side_bar__lefticon{
-        }
         
         .newgroup{
           margin-right: 5px;
@@ -38,8 +36,7 @@
     }
   }
   
-  
-  
+   
   &__grouplist {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
