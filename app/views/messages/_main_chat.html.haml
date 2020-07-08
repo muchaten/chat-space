@@ -2,46 +2,22 @@
   .Main_chat__header
     .Main_chat__box
       .Groupname
-        test
+        = @group.name
       .Groupmember
-        Memner : masa
+        = @group.users
     .Main_chat__groupedit
-      = link_to "#", class:"edit" do
-        Edit
+      = link_to edit_group_path(@group), class:"edit" do
+        = "Edit"
   .Main_chat__message
-    .message__top
-      .member__name
-        masa
-      .message__day
-        2019/1120(Wed) 17:43:01    
-    .message__text
-      おはよう！
-    .message__top
-      .member__name
-        masa
-      .message__day
-        2019/1120(Wed) 17:43:01    
-    .message__text
-      おはよう！
-    .message__top
-      .member__name
-        masa
-      .message__day
-        2019/1120(Wed) 17:43:01    
-    .message__text
-      おはよう！
+    = render @messages
   .Main_chat__form
-    .Form__content
-      .Content__textbox
-        .Form__text
-          type a message
-        .Form__image
-          = link_to "image", class:"image" do
-            %label(for="image")
-              = icon('fas', 'image')
-              %input(type="file")
-    .Form__sendbox
-      .Form__editbtn
-        Send
+    = form_with model: [@group, @message], html: {class: "Form"}, local: true do |f|
+      .Form__contents
+        = f.text_field :content, class: 'Form__text', placeholder: 'type a message'
+        = f.label :image, class: 'Form__image' do
+          = icon('far', 'image', class: 'Form__icon')
+          = f.file_field :image, class: 'Hidden'
+      = f.submit 'Send', class: 'Form__editbtn'
+
 
     
