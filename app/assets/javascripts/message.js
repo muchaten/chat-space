@@ -54,10 +54,6 @@ $(function(){
       contentType: false
     })
     .done(function(data){
-      let html = buildHTML(data);
-      $('.Main_chat__message').append(html);
-      $('.Main_chat__message').animate({ scrollTop: $('.Main_chat__message')[0].scrollHeight});
-      $('form_').val('');
       $('.Form__editbtn').prop('disabled', false);
       $('form')[0].reset();
     })
