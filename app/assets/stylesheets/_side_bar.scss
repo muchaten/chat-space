@@ -7,11 +7,13 @@
     display: flex;
     padding: 0 20px;
     align-items: center;
+    
     .Side_bar__headerbox {
       height: 20px;
       width: 260px;
       justify-content: space-between;
       display: flex;
+      
       .Side_bar__username {
         font-size: 16px;
         display: flex;
@@ -36,22 +38,25 @@
     }
   }
   
-   
+  a{
+    text-decoration: none;
+  }
   &__grouplist {
     height: calc(100vh - 100px);
     background-color: #2f3e51;
     padding: 0 20px;
+    overflow: scroll;
+    
     .Side_bar__groups{
-      text-decoration: none;
       padding: 20px 0 40px 0;
       list-style: none;
+
       .Side_bar__grouplistname {
         font-size: 15px;
         padding-bottom: 5px;
         color: #ffffff;
       }
       .Side_bar__groupmessages {
-        text-decoration: none;
         font-size: 11px;
         color: #ffffff;
       }
