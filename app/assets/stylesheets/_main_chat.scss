@@ -23,6 +23,15 @@
       }
       
     }
+      .Groupmember__box{
+        display: flex;
+      }
+      .Groupmember__name{
+        color: #999999;
+        font-size: 12px;
+        align-items: flex-end;
+        padding-top: 15px;
+      }
       .Groupmember{
         color: #999999;
         font-size: 12px;
