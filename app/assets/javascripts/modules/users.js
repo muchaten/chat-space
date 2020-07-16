@@ -35,7 +35,7 @@ $(function() {
       type: "GET",
       url: "/users",
       data: { keyword: input },
-      dataType: "json"
+      dataType: "json",
     })
     .done(function(users) {
       $("#UserSearchResult").empty();
@@ -50,7 +50,7 @@ $(function() {
       }
     })
     .fail(function() {
-      alert("通信エラーです。ユーザーが表示できません。");
+      alert("ユーザー検索に失敗しました");
     });
   });
   $("#UserSearchResult").on("click", ".ChatMember__add", function() {
