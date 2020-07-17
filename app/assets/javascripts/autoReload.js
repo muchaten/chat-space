@@ -1,4 +1,46 @@
 $(function(){
+
+  function buildHTML(message){
+    if ( message.image ) {
+      let html =
+        `<div class="MessageBox" data-message-id=${message.id}>
+          <div class="message__top">
+            <div class="member__name">
+              ${message.user_name}
+            </div>
+            <div class="message__day">
+              ${message.created_at}
+            </div>
+          </div>
+          <div class="Message">
+            <p class="Message__content">
+              ${message.content}
+            </p>
+            <img class="Message__image" src="${message.image}">
+          </div>
+        </div>`
+      return html;
+    } else {
+      let html =
+      `<div class="MessageBox" data-message-id=${message.id}>
+        <div class="message__top">
+          <div class="member__name">
+            ${message.user_name}
+          </div>
+          <div class="message__day">
+            ${message.created_at}
+          </div>
+        </div>
+        <div class="Message">
+          <p class="Message__content">
+            ${message.content}
+          </p>
+        </div>
+      </div>`
+      return html;
+    };
+  }
+  
   let reloadMessages = function() {
     //カスタムデータ属性を利用し、ブラウザに表示されている最新メッセージのidを取得
     let last_message_id = $('.MessageBox:last').data("message-id") || 0;
